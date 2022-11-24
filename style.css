@@ -1,0 +1,207 @@
+:root {
+  /* Primary */
+  --blue: hsl(223, 87%, 63%);
+
+  /* Secondary */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  /* Neutral */
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  height: 89%;
+}
+
+.logo {
+  width: 15%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 8rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--gray);
+  padding-top: 4rem;
+}
+
+.title span {
+  font-weight: 700;
+  color: black;
+}
+
+.info {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-top: 2rem;
+}
+
+.label {
+  width: 70%;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  height: 4rem;
+  border: solid 0.1rem var(--pale-blue);
+  border-radius: 2rem;
+  padding-left: 3rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  color: var(--blue);
+  outline-color: var(--pale-blue);
+  outline-width: 0.2rem;
+}
+
+.input::placeholder {
+  color: var(--pale-blue);
+  font-weight: 300;
+}
+
+.message {
+  padding: 1rem 0 1.5rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.button {
+  width: 70%;
+  height: 4rem;
+  margin: 1rem 0 5rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--blue);
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 10px 2px hsla(223, 87%, 63%, 0.4);
+  background-color: hsla(223, 87%, 63%, 0.9);
+}
+
+.dashboard {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+footer {
+  width: 100%;
+  max-width: 70rem;
+  height: 11%;
+  margin: 0 auto;
+  font-size: 11px;
+  text-align: center;
+}
+
+.social-media,
+.copyright,
+.social-media div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media div {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: solid 0.1rem var(--pale-blue);
+  border-radius: 50%;
+  margin: 0 1rem 2rem;
+  cursor: pointer;
+}
+
+.social-media div:hover {
+  border: none;
+  background-color: var(--blue);
+  box-shadow: 0px 0px 10px 2px hsla(223, 87%, 63%, 0.4);
+}
+
+.social-media div:hover > svg {
+  color: white;
+}
+
+.social-media svg {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+.copyright {
+  color: var(--gray);
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.copyright svg {
+  padding-right: 0.2rem;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+.inactive {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .logo {
+    width: 10%;
+  }
+  .title {
+    font-size: 3.8rem;
+  }
+  .info {
+    padding-top: 1rem;
+  }
+  .form-box {
+    width: 80%;
+    margin: 3rem auto 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .label {
+    width: 70%;
+    margin: 0;
+    padding-right: 1rem;
+  }
+  .message {
+    text-align: left;
+    padding-left: 3rem;
+  }
+  .button {
+    width: 30%;
+    margin: 0;
+  }
+}
