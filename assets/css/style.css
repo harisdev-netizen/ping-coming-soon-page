@@ -123,9 +123,9 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.page__footer {
-  /* margin-top: 50px; */
-}
+/* .page__footer {
+  margin-top: 50px;
+} */
 
 .footer__social {
   display: flex;
