@@ -18,10 +18,9 @@
 }
 
 body {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Libre Franklin';
   text-align: center;
   background-color: var(--color-white);
-  overflow-x: hidden;
 }
 
 .page {
